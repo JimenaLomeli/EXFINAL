@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 
 const User = require('../models/user')
-var secret = process.env.SECRET || require('../config.js').secret
+var secret = process.env.secret || require('../config.js').secret
 
 const auth = function( req, res, next ) {
   try {
